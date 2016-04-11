@@ -88,7 +88,8 @@ textarea {
 .ba-header {
 	margin-bottom: 236px;
 }
-.ba-intro__title {
+.ba-intro__title,
+.ba-services__title {
 	position: relative;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
@@ -96,7 +97,8 @@ textarea {
 	margin: 0;
 	margin-bottom: 75px;
 }
-.ba-intro__title:after {
+.ba-intro__title:after,
+.ba-services__title:after {
 	content: '';
 	position: absolute;
 	left: 46%;
@@ -120,7 +122,7 @@ textarea {
 	position: absolute;
 	display: block;
 	top: 50%;
-	left: 50%;
+	left: 45%;
 	width: 90px;
 	height: 90px;
 	border: 4px solid #5D7987;
@@ -132,4 +134,14 @@ textarea {
 }
 .ba-intro__button a:hover {
 	border-color: #fff;
+}
+/* services section */
+.ba-services {
+	padding-top: 100px;
+}
+.ba-services__title:after {
+	background-color: #1C1C1C;
+}
+.ba-services__title {
+	margin-bottom: 100px;
 }
