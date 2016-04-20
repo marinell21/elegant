@@ -120,9 +120,6 @@ textarea {
 	padding-bottom: 230px;
 }
 .ba-intro__button {
-	position: relative;
-}
-.ba-intro__button a {
 	position: absolute;
 	display: block;
 	left: 47%;
@@ -134,7 +131,7 @@ textarea {
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
-.ba-intro__button a:hover {
+.ba-intro__button:hover {
 	border-color: #fff;
 }
 /* services section */
@@ -166,6 +163,18 @@ textarea {
 	color: #fff;
 	padding-top: 75px;
 	padding-bottom: 120px;
+}
+@media (max-width: 769px) {
+	.ba-menu a {
+		padding-left: 35px;
+	}
+	.ba-about {
+		background: url(../img/phone-about.png) 95% 78% no-repeat,
+		url(../img/about_cover.jpg) 50% no-repeat;
+	}
+	.ba-about-text {
+		max-width: 440px;
+	}
 }
 .ba-about-text {
 	padding-top: 45px;
@@ -237,20 +246,18 @@ textarea {
 	opacity: 1;
 }
 .ba-work__button {
-	margin-top: 77px;
-}
-.ba-work__button a{
 	display: inline-block;
 	height: 60px;
 	line-height: 54px;
 	padding: 0 148px;
 	border: 4px solid #222222;
 	text-decoration: none;
+	margin-top: 77px;
 	color: #222222;
 	font-size: 24px;
 	font-weight: 400;
 }
-.ba-work__button a:hover {
+.ba-work__button:hover {
 	border-color: #07AEFB;
 }
 .ba-work__button a:active {
@@ -327,7 +334,7 @@ textarea {
 .ba-contact-form__button {
 	display: inline-block;
 	height: 55px;
-	line-height: 55px;
+	line-height: 48px;
 	border: 3px solid #fff;
 	color: #FFF;
 	padding: 0 55px;
@@ -342,4 +349,57 @@ textarea {
 .ba-contact-form__button:active {
 	position: relative;
 	top: 1px;
+}
+@media (max-width: 480px) {
+	.ba-menu {
+		display: none;
+	}
+	.ba-header {
+		margin-bottom: 65px;
+	}
+	.ba-intro__title:after {
+		left: 37%;
+		top: 116%;
+	}
+	.ba-intro__text {
+		padding-bottom: 85px;
+	}
+	.ba-intro__button {
+		width: 80px;
+		height: 80px;
+		left: 37%;
+	}
+	.ba-grid > [class*="ba-width-"] {
+		padding-bottom: 10px;
+	}
+	.ba-services {
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+	.ba-about {
+		padding-top: 0;
+		padding-bottom: 20px;
+		background: url(../img/about_cover.jpg) 50% no-repeat;
+	}
+	.ba-work {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+	.ba-services__title,
+	.ba-work__title {
+		margin-bottom: 65px;
+	}
+	.ba-services__title:after,
+	.ba-work__title:after,
+	.ba-contact__title:after {
+		top: 70px;
+		left: 35%;
+	}
+	.ba-work__button {
+		padding: 0 80px;
+		margin-top: 40px;
+	}
+	.ba-contact__title {
+		margin-bottom: 70px;
+	}
 }
