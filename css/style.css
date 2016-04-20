@@ -402,4 +402,7 @@ textarea {
 	.ba-contact__title {
 		margin-bottom: 70px;
 	}
+	.ba-contact {
+		padding: 50px 0 50px;
+	}
 }
